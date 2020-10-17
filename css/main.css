@@ -1,4 +1,3 @@
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -10,10 +9,47 @@ body {
   padding: 0;
 }
 
-.header-img img {
-  position: relative;
+#pocetna {
+  background-attachment: fixed;
+}
+
+.head {
   width: 100%;
-  height: 700px;
+  height: 80px;
+  background-color: inherit;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+}
+
+.head h1 {
+  width: 100px;
+  height: auto;
+  margin: 15px;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+
+}
+
+.head.sticky {
+  background-color: #f4f4f4;
+  position: fixed;
+  z-index: 1;
+}
+
+.head.sticky h1 {
+  color: #ff7315;
+}
+
+.head.sticky #main-menu a {
+  color: #3a3535;
+}
+
+.header-img img {
+  width: 100%;
+  height: 800px;
   border-bottom: 1px solid black;
 }
 
@@ -23,15 +59,12 @@ body {
   background-color: rgba(0, 0, 0, 0.295);
   border-radius: 10px;
   position: absolute;
-  z-index: 3;
   color: #fff;
   width: 100%;
-  padding-left: 22%;
-  /*
-  left: 22%; */
-  top: 35%;
-  
+  margin: 0 auto;
+  top: 45%;
   font-size: 20px;
+  padding-left: 90px;
 }
 
 .udruzenje h1 {
@@ -44,36 +77,16 @@ body {
   text-shadow: 2px 2px #1d1818;
 }
 
-.head h1 {
-  width: 200px;
-  height: auto;
-  margin: auto;
-  padding-top: 40px;
-  font-size: 34px;
-  text-align: center;
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #e6b31e;
-  position: absolute;
-  top: -30px;
-  left: 10px;
-  position: fixed;
-  z-index: 1;
-}
-
-.head-img img {
-  width: 100%;
-  height: 800px;
-}
-
 #main-menu {
   display: flex;
-  width: 60%;
-  height: 40px;
-  margin: 20px 0 0 0px;
+  list-style-type: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+  overflow: hidden;
   position: fixed;
   top: 0;
+  width: 50%;
   right: 0;
-  z-index: 1;
 }
 
 #main-menu a {
@@ -82,19 +95,22 @@ body {
   display: block;
   padding: 10px 0;
   text-decoration: none;
-  font-size: 23px;
-  color: #ff8b00;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
   transition: 300ms;
 }
 
-/* #main-menu a:hover, */
-/* #main-menu a.active { */
-background-color: cyan;
-color: gold;
+/* o nama */
+#o-nama {
+  background-attachment: fixed;
+  padding-top: 80px;
 }
 
-/* o nama */
-
+.page {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
 
 .page h2 {
   width: 100%;
@@ -111,28 +127,25 @@ color: gold;
 }
 
 .colum ul {
-  position: relative;
-  margin: auto;
-}
+    margin: auto;
+  }
 
 .colum ul li {
-  text-transform: uppercase;
   display: inline-flex;
+  flex-grow: 1;
+  text-transform: uppercase;
   justify-content: center;
   align-items: center;
- list-style-type: none;
- margin: 30px;
- font-weight: bold;
+  list-style-type: none;
+  margin: 0 30px;
+  font-weight: bold;
   text-align: center;
   font-size: 15px;
   background: url(../images/oblak.png) no-repeat;
   width: 210px;
   height: 190px;
   padding: 0 0 0 5px;
-  
 }
-
-
 
 .ciscenje {
   display: flex;
@@ -143,14 +156,13 @@ color: gold;
 
 .ciscenje ul {
   position: relative;
-  
 }
 
 .ciscenje ul li {
   display: inline-block;
- list-style-type: none;
- margin: 10px;
- font-weight: bold;
+  list-style-type: none;
+  margin: 10px;
+  font-weight: bold;
   text-align: center;
   font-size: 15px;
   width: 200px;
@@ -174,17 +186,55 @@ color: gold;
   text-align: center;
 }
 
+/* Usluge/Cenovnik */
+#usluge {
+  background-attachment: fixed;
+  padding-top: 50px;
+}
+
+.page2 {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid black;
+}
+
+.page2 div h2 {
+  text-align: center;
+  color: gray;
+  margin: 40px;
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.service {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+  flex-grow: 1;
+  padding: 20px 10px;
+  margin: 0 60px 70px 70px;
+  max-width: 360px;
+  border-radius: 10px;
+}
 
 /* zaglavlje */
+#kontakt{
+  background-attachment: fixed;
+}
 
 .zaglavlje {
+  width: auto;
   background-color: #000;
   color: #fff;
   height: auto;
   padding: 10px 0;
+  position: relative;
+  bottom: 0;
 }
-
-
 
 .zaglavlje .podaci {
   margin-left: 30px;
@@ -250,11 +300,11 @@ color: gold;
 }
 
 /* copyright */
-
 .copyright {
   height: 25px;
   text-align: center;
   margin: auto;
+
 }
 
 .copyright p {
@@ -267,11 +317,3 @@ color: gold;
 .copyright p>a {
   text-decoration: none;
 }
-
-
-
-
-
-
-
-
