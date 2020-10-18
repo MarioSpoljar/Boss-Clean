@@ -179,9 +179,12 @@ body {
 }
 
 .saradnja {
+  background-color: #f4f4f4;
+  color:  #ff7315;
   border-top: 2px solid #000;
   font-weight: bold;
   font-size: 10px;
+  padding: 3px 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -211,15 +214,32 @@ body {
 }
 
 .service {
-  background-color: #000;
-  color: #fff;
+  background-color: #3a3535;
+  color: #ff7315;
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
   flex-grow: 1;
+  margin: 10px auto;
   padding: 20px 10px;
-  margin: 0 60px 70px 70px;
   max-width: 360px;
   border-radius: 10px;
 }
+
+.service h3 {
+  text-align: center;
+}
+
+.service li {
+  margin: 5px 0;
+}
+
+
+.service li span {
+  float: right;
+  font-weight: bold;
+}
+
+
+
 
 /* zaglavlje */
 #kontakt{
@@ -228,8 +248,9 @@ body {
 
 .zaglavlje {
   width: auto;
-  background-color: #000;
-  color: #fff;
+  background-color: #f4f4f4;
+  color: #3a3535;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
   height: auto;
   padding: 10px 0;
   position: relative;
@@ -249,7 +270,7 @@ body {
 .zaglavlje a {
   position: relative;
   text-decoration: none;
-  color: #fff;
+  color: #3a3535;
   margin: 30px;
   top: 10px;
 }
@@ -258,20 +279,19 @@ body {
   text-decoration: underline;
 }
 
-.sijalica-zaglavlje {
+.kofice-zaglavlje {
   position: absolute;
   left: 55%;
   margin-top: 20px;
 }
 
-.sijalica-zaglavlje img {
+.kofice-zaglavlje img {
   margin: auto;
-  width: 100px;
+  width: 70px;
   opacity: 0.5;
 }
 
-.sijalica-zaglavlje img:hover {
-  color: #fff;
+.kofice-zaglavlje img:hover {
   scale: 1.2;
   opacity: 1;
   transform: scale(1.2);
@@ -287,6 +307,7 @@ body {
 .social-media a {
   font-size: 35px;
   margin-right: 0;
+  color:   #ff7315;
 }
 
 .social-media a:hover {
